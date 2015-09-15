@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		24416B8111C4CA220047AFDD /* Build & Test */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */;
+			buildPhases = (
+				24416B8011C4CA220047AFDD /* ShellScript */,
+			);
+			dependencies = (
+				24416B8511C4CA280047AFDD /* PBXTargetDependency */,
+			);
+			name = "Build & Test";
+			productName = "Build & test";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		24DD6CF91134B3F500162E58 /* SeHyperlabLeveldbModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* SeHyperlabLeveldbModule.h */; };
+		24DD6CFA1134B3F500162E58 /* SeHyperlabLeveldbModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* SeHyperlabLeveldbModule.m */; };
+		24DE9E1111C5FE74003F90F6 /* SeHyperlabLeveldbModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* SeHyperlabLeveldbModuleAssets.h */; };
+		24DE9E1211C5FE74003F90F6 /* SeHyperlabLeveldbModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* SeHyperlabLeveldbModuleAssets.m */; };
+		AA747D9F0F9514B9006C5449 /* SeHyperlabLeveldb_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* SeHyperlabLeveldb_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		BB6E5ACA1B61272D00B8C117 /* SeHyperlabLeveldbDatabaseProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = BB6E5AC81B61272D00B8C117 /* SeHyperlabLeveldbDatabaseProxy.h */; };
+		BB6E5ACB1B61272D00B8C117 /* SeHyperlabLeveldbDatabaseProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6E5AC91B61272D00B8C117 /* SeHyperlabLeveldbDatabaseProxy.m */; };
+		BB6E5B1E1B61302000B8C117 /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = BB6E5B171B61302000B8C117 /* Common.h */; };
+		BB6E5B1F1B61302000B8C117 /* LDBSnapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = BB6E5B181B61302000B8C117 /* LDBSnapshot.h */; };
+		BB6E5B201B61302000B8C117 /* LDBSnapshot.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB6E5B191B61302000B8C117 /* LDBSnapshot.mm */; };
+		BB6E5B211B61302000B8C117 /* LDBWriteBatch.h in Headers */ = {isa = PBXBuildFile; fileRef = BB6E5B1A1B61302000B8C117 /* LDBWriteBatch.h */; };
+		BB6E5B221B61302000B8C117 /* LDBWriteBatch.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB6E5B1B1B61302000B8C117 /* LDBWriteBatch.mm */; };
+		BB6E5B231B61302000B8C117 /* LevelDB.h in Headers */ = {isa = PBXBuildFile; fileRef = BB6E5B1C1B61302000B8C117 /* LevelDB.h */; };
+		BB6E5B241B61302000B8C117 /* LevelDB.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB6E5B1D1B61302000B8C117 /* LevelDB.mm */; };
+		BB6E5B541B61373C00B8C117 /* libleveldb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6E5B2E1B61302800B8C117 /* libleveldb.a */; };
+		BB6E5B571B613DA700B8C117 /* db.h in Sources */ = {isa = PBXBuildFile; fileRef = BB6E5B291B61302800B8C117 /* db.h */; };
+		BB6E5B581B613DAF00B8C117 /* db.h in Headers */ = {isa = PBXBuildFile; fileRef = BB6E5B291B61302800B8C117 /* db.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24416B8411C4CA280047AFDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = TiLevelDB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24DD6CF71134B3F500162E58 /* SeHyperlabLeveldbModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeHyperlabLeveldbModule.h; path = Classes/SeHyperlabLeveldbModule.h; sourceTree = "<group>"; };
+		24DD6CF81134B3F500162E58 /* SeHyperlabLeveldbModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeHyperlabLeveldbModule.m; path = Classes/SeHyperlabLeveldbModule.m; sourceTree = "<group>"; };
+		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
+		24DE9E0F11C5FE74003F90F6 /* SeHyperlabLeveldbModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeHyperlabLeveldbModuleAssets.h; path = Classes/SeHyperlabLeveldbModuleAssets.h; sourceTree = "<group>"; };
+		24DE9E1011C5FE74003F90F6 /* SeHyperlabLeveldbModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeHyperlabLeveldbModuleAssets.m; path = Classes/SeHyperlabLeveldbModuleAssets.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* SeHyperlabLeveldb_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeHyperlabLeveldb_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BB6E5AC81B61272D00B8C117 /* SeHyperlabLeveldbDatabaseProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeHyperlabLeveldbDatabaseProxy.h; path = Classes/SeHyperlabLeveldbDatabaseProxy.h; sourceTree = "<group>"; };
+		BB6E5AC91B61272D00B8C117 /* SeHyperlabLeveldbDatabaseProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeHyperlabLeveldbDatabaseProxy.m; path = Classes/SeHyperlabLeveldbDatabaseProxy.m; sourceTree = "<group>"; };
+		BB6E5B171B61302000B8C117 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		BB6E5B181B61302000B8C117 /* LDBSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDBSnapshot.h; sourceTree = "<group>"; };
+		BB6E5B191B61302000B8C117 /* LDBSnapshot.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LDBSnapshot.mm; sourceTree = "<group>"; };
+		BB6E5B1A1B61302000B8C117 /* LDBWriteBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDBWriteBatch.h; sourceTree = "<group>"; };
+		BB6E5B1B1B61302000B8C117 /* LDBWriteBatch.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LDBWriteBatch.mm; sourceTree = "<group>"; };
+		BB6E5B1C1B61302000B8C117 /* LevelDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelDB.h; sourceTree = "<group>"; };
+		BB6E5B1D1B61302000B8C117 /* LevelDB.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LevelDB.mm; sourceTree = "<group>"; };
+		BB6E5B261B61302800B8C117 /* c.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = c.h; sourceTree = "<group>"; };
+		BB6E5B271B61302800B8C117 /* cache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cache.h; sourceTree = "<group>"; };
+		BB6E5B281B61302800B8C117 /* comparator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = comparator.h; sourceTree = "<group>"; };
+		BB6E5B291B61302800B8C117 /* db.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = db.h; sourceTree = "<group>"; };
+		BB6E5B2A1B61302800B8C117 /* dumpfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dumpfile.h; sourceTree = "<group>"; };
+		BB6E5B2B1B61302800B8C117 /* env.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = env.h; sourceTree = "<group>"; };
+		BB6E5B2C1B61302800B8C117 /* filter_policy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = filter_policy.h; sourceTree = "<group>"; };
+		BB6E5B2D1B61302800B8C117 /* iterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iterator.h; sourceTree = "<group>"; };
+		BB6E5B2E1B61302800B8C117 /* libleveldb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libleveldb.a; sourceTree = "<group>"; };
+		BB6E5B2F1B61302800B8C117 /* options.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = options.h; sourceTree = "<group>"; };
+		BB6E5B301B61302800B8C117 /* slice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = slice.h; sourceTree = "<group>"; };
+		BB6E5B311B61302800B8C117 /* status.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = status.h; sourceTree = "<group>"; };
+		BB6E5B321B61302800B8C117 /* table.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = table.h; sourceTree = "<group>"; };
+		BB6E5B331B61302800B8C117 /* table_builder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = table_builder.h; sourceTree = "<group>"; };
+		BB6E5B341B61302800B8C117 /* write_batch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = write_batch.h; sourceTree = "<group>"; };
+		D2AAC07E0554694100DB518D /* libSeHyperlabLeveldb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSeHyperlabLeveldb.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+				BB6E5B541B61373C00B8C117 /* libleveldb.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libSeHyperlabLeveldb.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* TiLevelDB */ = {
+			isa = PBXGroup;
+			children = (
+				BB6E5B251B61302800B8C117 /* leveldb */,
+				BB6E5B161B61302000B8C117 /* Objective-LevelDB */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = TiLevelDB;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				24DE9E0F11C5FE74003F90F6 /* SeHyperlabLeveldbModuleAssets.h */,
+				24DE9E1011C5FE74003F90F6 /* SeHyperlabLeveldbModuleAssets.m */,
+				24DD6CF71134B3F500162E58 /* SeHyperlabLeveldbModule.h */,
+				24DD6CF81134B3F500162E58 /* SeHyperlabLeveldbModule.m */,
+				BB6E5AC81B61272D00B8C117 /* SeHyperlabLeveldbDatabaseProxy.h */,
+				BB6E5AC91B61272D00B8C117 /* SeHyperlabLeveldbDatabaseProxy.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* SeHyperlabLeveldb_Prefix.pch */,
+				24DD6D1B1134B66800162E58 /* titanium.xcconfig */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		BB6E5B161B61302000B8C117 /* Objective-LevelDB */ = {
+			isa = PBXGroup;
+			children = (
+				BB6E5B171B61302000B8C117 /* Common.h */,
+				BB6E5B181B61302000B8C117 /* LDBSnapshot.h */,
+				BB6E5B191B61302000B8C117 /* LDBSnapshot.mm */,
+				BB6E5B1A1B61302000B8C117 /* LDBWriteBatch.h */,
+				BB6E5B1B1B61302000B8C117 /* LDBWriteBatch.mm */,
+				BB6E5B1C1B61302000B8C117 /* LevelDB.h */,
+				BB6E5B1D1B61302000B8C117 /* LevelDB.mm */,
+			);
+			path = "Objective-LevelDB";
+			sourceTree = "<group>";
+		};
+		BB6E5B251B61302800B8C117 /* leveldb */ = {
+			isa = PBXGroup;
+			children = (
+				BB6E5B261B61302800B8C117 /* c.h */,
+				BB6E5B271B61302800B8C117 /* cache.h */,
+				BB6E5B281B61302800B8C117 /* comparator.h */,
+				BB6E5B291B61302800B8C117 /* db.h */,
+				BB6E5B2A1B61302800B8C117 /* dumpfile.h */,
+				BB6E5B2B1B61302800B8C117 /* env.h */,
+				BB6E5B2C1B61302800B8C117 /* filter_policy.h */,
+				BB6E5B2D1B61302800B8C117 /* iterator.h */,
+				BB6E5B2E1B61302800B8C117 /* libleveldb.a */,
+				BB6E5B2F1B61302800B8C117 /* options.h */,
+				BB6E5B301B61302800B8C117 /* slice.h */,
+				BB6E5B311B61302800B8C117 /* status.h */,
+				BB6E5B321B61302800B8C117 /* table.h */,
+				BB6E5B331B61302800B8C117 /* table_builder.h */,
+				BB6E5B341B61302800B8C117 /* write_batch.h */,
+			);
+			path = leveldb;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB6E5B581B613DAF00B8C117 /* db.h in Headers */,
+				BB6E5B211B61302000B8C117 /* LDBWriteBatch.h in Headers */,
+				AA747D9F0F9514B9006C5449 /* SeHyperlabLeveldb_Prefix.pch in Headers */,
+				BB6E5ACA1B61272D00B8C117 /* SeHyperlabLeveldbDatabaseProxy.h in Headers */,
+				24DE9E1111C5FE74003F90F6 /* SeHyperlabLeveldbModuleAssets.h in Headers */,
+				24DD6CF91134B3F500162E58 /* SeHyperlabLeveldbModule.h in Headers */,
+				BB6E5B1E1B61302000B8C117 /* Common.h in Headers */,
+				BB6E5B231B61302000B8C117 /* LevelDB.h in Headers */,
+				BB6E5B1F1B61302000B8C117 /* LDBSnapshot.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* TiLevelDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "TiLevelDB" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TiLevelDB;
+			productName = TiLevelDB;
+			productReference = D2AAC07E0554694100DB518D /* libSeHyperlabLeveldb.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "TiLevelDB" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* TiLevelDB */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* TiLevelDB */,
+				24416B8111C4CA220047AFDD /* Build & Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24416B8011C4CA220047AFDD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\n\npython \"${TITANIUM_SDK}/titanium.py\" run --dir=\"${PROJECT_DIR}\"\nexit $?\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB6E5B571B613DA700B8C117 /* db.h in Sources */,
+				BB6E5B201B61302000B8C117 /* LDBSnapshot.mm in Sources */,
+				BB6E5B221B61302000B8C117 /* LDBWriteBatch.mm in Sources */,
+				BB6E5B241B61302000B8C117 /* LevelDB.mm in Sources */,
+				24DD6CFA1134B3F500162E58 /* SeHyperlabLeveldbModule.m in Sources */,
+				24DE9E1211C5FE74003F90F6 /* SeHyperlabLeveldbModuleAssets.m in Sources */,
+				BB6E5ACB1B61272D00B8C117 /* SeHyperlabLeveldbDatabaseProxy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24416B8511C4CA280047AFDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* TiLevelDB */;
+			targetProxy = 24416B8411C4CA280047AFDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/SeHyperlabLeveldb.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SeHyperlabLeveldb_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/libleveldb",
+					"$(PROJECT_DIR)/Objective-LevelDB/leveldb",
+					"$(PROJECT_DIR)/leveldb",
+				);
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = SeHyperlabLeveldb;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "./**";
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				DSTROOT = /tmp/SeHyperlabLeveldb.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SeHyperlabLeveldb_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/libleveldb",
+					"$(PROJECT_DIR)/Objective-LevelDB/leveldb",
+					"$(PROJECT_DIR)/leveldb",
+				);
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = SeHyperlabLeveldb;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "./**";
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/SeHyperlabLeveldb.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SeHyperlabLeveldb_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = SeHyperlabLeveldb;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				DSTROOT = /tmp/SeHyperlabLeveldb.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SeHyperlabLeveldb_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = SeHyperlabLeveldb;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		24416B8211C4CA220047AFDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Build & test";
+			};
+			name = Debug;
+		};
+		24416B8311C4CA220047AFDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Build & test";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "TiLevelDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "TiLevelDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24416B8211C4CA220047AFDD /* Debug */,
+				24416B8311C4CA220047AFDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
