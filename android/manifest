@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 2
+architectures: armeabi armeabi-v7a x86
+description: LevelDB
+author: Hyperlab AB
+license: MIT
+copyright: Hyperlab AB
+
+# these should not be edited
+name: LevelDB
+moduleid: se.hyperlab.leveldb
+guid: 1c354a50-1003-432b-865f-26d4b08f90f8
+platform: android
+minsdk: 5.0.2.GA
