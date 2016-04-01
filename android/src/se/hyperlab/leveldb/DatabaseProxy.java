@@ -34,7 +34,7 @@ public class DatabaseProxy extends KrollProxy {
     }
 
     private void createDatabase(String name) {
-        Log.d(LCAT, "Trying to create database " + name);
+        Log.d(LCAT, "Create database: " + name);
         try {
             db = new SnappyDB.Builder(TiApplication.getInstance().getApplicationContext())
                     .name(name)
@@ -77,10 +77,9 @@ public class DatabaseProxy extends KrollProxy {
 
     @Kroll.method
     public void setObject(String key, KrollDict data) {
-        Log.d(LCAT, "Trying to set object " + key);
+        Log.d(LCAT, "Set object: " + key);
         try {
-            DB db = getDatabase();
-            db.put(key, data.toString());
+            getDatabase().put(key, data);
         } catch (SnappydbException e) {
             e.printStackTrace();
         }
@@ -88,17 +87,28 @@ public class DatabaseProxy extends KrollProxy {
 
     @Kroll.method
     public KrollDict getObject(String key) {
-        Log.d(LCAT, "Trying to get object " + key);
-        String rawData = null;
-        KrollDict result = null;
-        try {
-            rawData = getDatabase().get(key);
-            result = stringToDict(rawData);
-        } catch (SnappydbException e) {
-            e.printStackTrace();
-        }
+        Log.d(LCAT, "Get object: " + key);
+        DB db = getDatabase();
 
-        return result;
+        if (hasObject(key)) {
+            KrollDict result = null;
+
+            try {
+                result = getDatabase().get(key, KrollDict.class);
+            } catch (SnappydbException e) {
+                Log.d(LCAT, "Failed to retrieve object as KrollDict, trying with string.");
+                try {
+                    result = stringToDict(getDatabase().get(key)); // fallback since last version stored data in json string
+                } catch (SnappydbException e2) {
+                    Log.d(LCAT, "Failed to retrieve object as string.");
+                    e2.printStackTrace();
+                }
+            }
+
+            return result;
+        } else {
+            return null;
+        }
     }
 
     @Kroll.method
@@ -129,8 +139,20 @@ public class DatabaseProxy extends KrollProxy {
     }
 
     @Kroll.method
+    public boolean hasObject(String key) {
+        boolean exists = false;
+        try {
+            exists = getDatabase().exists(key);
+        } catch (SnappydbException e) {
+            e.printStackTrace();
+        }
+
+        return exists;
+    }
+
+    @Kroll.method
     public void deleteObject(String key) {
-        Log.d(LCAT, "Trying to delete object " + key);
+        Log.d(LCAT, "Delete object: " + key);
         try {
             getDatabase().del(key);
         } catch (SnappydbException e) {
@@ -140,7 +162,7 @@ public class DatabaseProxy extends KrollProxy {
 
     @Kroll.method
     public void deleteAllObjects() {
-        Log.d(LCAT, "Tring to destroy database");
+        Log.d(LCAT, "Destroy database.");
         try {
             getDatabase().destroy();
             createDatabase(dbName);

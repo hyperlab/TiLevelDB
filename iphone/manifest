@@ -12,7 +12,7 @@ copyright: Hyperlab AB
 # these should not be edited
 name: TiLevelDB
 moduleid: se.hyperlab.leveldb
-architectures: armv7 arm64 i386 x86_64
+architectures: armv7 arm64
 guid: 25106b90-ed56-4d02-843d-5334d2b64cb5
 platform: iphone
-minsdk: 3.4.1.GA
+minsdk: 5.2.0.GA
